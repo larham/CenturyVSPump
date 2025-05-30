@@ -26,7 +26,7 @@ CenturyVSPumpDemandNumber = century_vs_pump_ns.class_(
 
 
 CONFIG_SCHEMA = cv.All(
-    number.number_schema.extend(cv.COMPONENT_SCHEMA)
+    number.number_schema().extend(cv.COMPONENT_SCHEMA)
     .extend(CenturyVSPumpItemSchema)
     .extend(
         {
